@@ -43,7 +43,6 @@ function CardEdit(){
         console.log("Submitted:", card);
         async function updateData() {
            try {
-           const dataFromAPI = await updateCard(card);
            history.push(`/decks/${deckId}`);
           } catch (error) {
             if (error.name === "AbortError") {
