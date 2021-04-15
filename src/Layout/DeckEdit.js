@@ -38,7 +38,6 @@ function DeckEdit(){
     };
     const history = useHistory();
     const handleSubmit = (event) => {
-        let output = [];
         event.preventDefault();
         //console.log("Submitted:", deck);
         async function updateData() {
